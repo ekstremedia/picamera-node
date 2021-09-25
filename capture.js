@@ -1,5 +1,5 @@
 const PiCamera = require("pi-camera");
-const webServer = '/var/www/html/'
+const webServer = "/var/www/html/";
 
 const myCamera = new PiCamera({
     mode: "photo",
@@ -7,6 +7,11 @@ const myCamera = new PiCamera({
     width: 640,
     height: 480,
     nopreview: true,
+    awb: "off",
+    shutter: 6000000,
+    iso: 800,
+
+
 });
 
 myCamera
